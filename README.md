@@ -1,10 +1,10 @@
-# Grammers-Patterns-Summary
+# Grammars-Patterns-Summary
 iOS, swift의 문법들과 다양한 패턴들을 정리한 Repository.
 여러 ToyProjects들을 진행하며 어렵다고 느꼈거나, 자주 쓰인다고 느낀 다양한 swift 문법들 및 pattern들에 대해 정리해볼 Repository입니다.
 
 잘 정리해서 앞으로 진행할 많은 Projects에서 도움이 되기 바랍니다.
 
-## Swift Grammers
+## Swift Grammars
 
 ### Class & Struct & Enum
 
