@@ -3,7 +3,7 @@
 import Foundation
 import CoreGraphics
 
-//MARK: - Property & Property Observers
+ //MARK: - Property & Property Observers
 //* class, struct, enum 등에 관련된 값을 뜻함.
 //* 변수나 상수 등이 어떤 목적으로 쓰이느냐, 어디에서 어떻게 쓰이느냐에 따라 용어가 좀 달라질 뿐. 같은 형태.
 
