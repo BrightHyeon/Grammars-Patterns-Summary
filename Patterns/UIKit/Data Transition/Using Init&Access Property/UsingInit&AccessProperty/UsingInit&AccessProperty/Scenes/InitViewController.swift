@@ -59,7 +59,7 @@ class InitViewController: UIViewController {
 //
 //        let mainVC = MainViewController()
 //        mainVC.mainLabel.text = "init에서 왔다."
-//    } =====>>>>> 안먹힘. //TODO: 원인분석.
+//    } =====>>>>> 안먹힘. //TODO: 원인분석. Answer: 이런 방법이 아니라, MainVC에 값을 처리하는 함수를 만들고, 그 함수에 전달인자로 값을 넘긴 후, MainVC에서 값을 정제해야한다. 허나 이 방법은 서로 tight-Coupled한 상태(ex) Nav로 이어진 가까운 뷰컨 사이)에서 할 수 있는 방법이기 때문에 이어지는 Stack이 많을수록 스파게티처럼 늘어진다. 가독성 및 유지보수력이 떨어질 수 있으니 추천하지않는다.
 }
 
 //private extension InitViewController {
@@ -68,7 +68,7 @@ class InitViewController: UIViewController {
 //        mainVC.mainLabel.text = "init에서 왔다."
 //
 //        self.navigationController?.popViewController(animated: true)
-//    } =====>>>>> 안먹힘. //TODO: 원인분석.
+//    } =====>>>>> 안먹힘. //TODO: 원인분석. Answer: 위와 동일함.
 //}
 
 //MARK: Private Setup Functions
