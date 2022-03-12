@@ -63,13 +63,21 @@
 				964BBD2727DC3AD200818059 /* AppDelegate.swift */,
 				964BBD2927DC3AD200818059 /* SceneDelegate.swift */,
 				964BBD2B27DC3AD200818059 /* MainViewController.swift */,
-				964FCBF127DC3FAC002B59D1 /* InitViewController.swift */,
-				964FCBF327DC3FDB002B59D1 /* PropertyViewController.swift */,
+				964FCBF527DC4DC8002B59D1 /* Scenes */,
 				964BBD3027DC3AD300818059 /* Assets.xcassets */,
 				964BBD3227DC3AD300818059 /* LaunchScreen.storyboard */,
 				964BBD3527DC3AD300818059 /* Info.plist */,
 			);
 			path = "UsingInit&AccessProperty";
+			sourceTree = "<group>";
+		};
+		964FCBF527DC4DC8002B59D1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				964FCBF127DC3FAC002B59D1 /* InitViewController.swift */,
+				964FCBF327DC3FDB002B59D1 /* PropertyViewController.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
