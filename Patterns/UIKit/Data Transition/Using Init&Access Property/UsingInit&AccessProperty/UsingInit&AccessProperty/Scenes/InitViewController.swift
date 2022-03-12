@@ -11,7 +11,7 @@ import SnapKit
 class InitViewController: UIViewController {
     
     //MARK: Properties
-    private lazy var textLabel: UILabel = {
+    private lazy var textLabel: UILabel = { //이런 형태의 값 전달은 클로저를 이용한 것이다. 또한 lazy선언이기에 필요할 때 값이 할당된다. 단순히 빈값을 생성하고, 다른 함수에서 세세한 것을 정의한 후 그 함수를 필요 시점에 호출한 것과 같은 효과를 발휘한다. 어차피 같은 것이라면 가독성을 높일 수 있도록 그 변수의 특징은 변수 블럭안에 정의하는 것이 좋아보인다. 
         let label = UILabel()
         label.font = .systemFont(ofSize: 15, weight: .bold)
         label.textColor = .label
