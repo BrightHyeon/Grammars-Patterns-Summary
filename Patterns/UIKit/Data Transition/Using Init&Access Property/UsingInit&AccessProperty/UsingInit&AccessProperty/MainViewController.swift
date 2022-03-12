@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
         button.setTitle("Using init", for: .normal)
         button.setTitleColor(.label, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
+        button.addTarget(self, action: #selector(tapInitButton), for: .touchUpInside)
         
         return button
     }()
@@ -42,6 +43,16 @@ class MainViewController: UIViewController {
     }
 }
 
+//MARK: @objc Functions
+private extension MainViewController {
+    @objc func tapInitButton() {
+        let vc = InitViewController(labelText: "MainViewController -init-> InitViewController")
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+//        self.show(vc, sender: nil) //push와 유사함.
+//        self.present(vc, animated: true, completion: nil)
+    }
+}
 
 //MARK: Private Setup Functions
 private extension MainViewController {
