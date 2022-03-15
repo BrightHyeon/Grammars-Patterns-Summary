@@ -34,6 +34,10 @@ class GetViewController: UIViewController {
     var completionHandler: ((String) -> Void)? //MARK: 1. Closure 선언.
     //String값을 입력받고 String을 출력하는 클로저.
     
+    
+    var handler: ((Int) -> Void)? //For Test.
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,11 +53,17 @@ private extension GetViewController {
         
 //        completionHandler?(self.textField.text ?? "") //사실상 이렇게만써도 잘 작동한다. 하지만 return이 있는 클로저이기에 Result of call to function returning 'String' is unused. 이렇게 값이 사용되지않았다는 경고가 뜰수 있기때문에 형식상 _ = 를 사용해서 값 받은 척~! 하는 것 같다. 
         
-        completionHandler?(self.textField.text ?? "") //MARK: 2. Closure를 통해 값을 전달?
+//        completionHandler?(self.textField.text ?? "") //MARK: 2. Closure를 통해 값을 전달?
         //_; 와일드카드: 값을 해제하거나 무시하는 패턴 중 하나.
         //"이 자리에 올 것이 무엇이든 상관하지 말라"라는 뜻이다.
         //TODO: 정확한 원리 알아보기. 가장 하단 주석 참고.
         //값을 리턴하는 클로저(함수) 형태이지만 그 값을 사용하지않을 경우 _ 와일드카드를 사용하여 컴파일러에게 알려주는 것 같다. (에러방지)
+        
+        if Int(self.textField.text!) != nil {
+            handler?((Int(self.textField.text ?? "") ?? 0) * 2)
+        } else {
+            completionHandler?(self.textField.text ?? "")
+        }
         
         self.navigationController?.popViewController(animated: true)
     }
