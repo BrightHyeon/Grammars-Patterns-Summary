@@ -11,9 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
 
 }
 
+//각종 setup을 위한 메서드는 private하게 하는 습관.
+private extension ViewController {
+    func setupNavBar() {
+        
+    }
+}
