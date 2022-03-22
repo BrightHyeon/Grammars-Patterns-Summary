@@ -1,0 +1,89 @@
+//
+//  HScrollView.swift
+//  ExampleViews
+//
+//  Created by HyeonSoo Kim on 2022/03/22.
+//
+//  "에브리타임" App's Horizontal ScrollView - Clone Coding
+//  각 셀이 하나의 버튼으로 동작. UIKit으로 치면 didSelect메서드 구현.
+
+import SwiftUI
+
+struct HScrollView: View {
+    
+    private let cellList: [HSVsStorage] =
+    [
+        HSVsStorage(titleLabel: "복학 신청기간 만료일", dateLabel: dateToString(), systemImageName: "calendar", buttonLabel: "학사 일정 >", foregroundColor: .green),
+        HSVsStorage(titleLabel: "복학 신청 및 허가기간 마감", dateLabel: dateToString(), systemImageName: "calendar", buttonLabel: "학사 일정 >", foregroundColor: .green),
+        HSVsStorage(titleLabel: "대학생 필수 사이트 모음", dateLabel: "과제할 때 도움되는 사이트 없나요?", systemImageName: "lightbulb", buttonLabel: "자세히 >", foregroundColor: .yellow),
+        HSVsStorage(titleLabel: "오늘의 할일", dateLabel: dateToString(), systemImageName: "checkmark.square", buttonLabel: "전체 보기 >", foregroundColor: .blue)
+    ]
+    
+    var body: some View {
+        ScrollView(.horizontal) {
+            HStack(spacing: 30) {
+                Spacer()
+                
+                ForEach(cellList, id: \.self) {
+                    HScrollViewCell(cellData: $0)
+                        .border(.gray)
+                }
+                
+                Spacer()
+            }
+        }
+    }
+}
+
+struct HScrollViewCell: View {
+    
+    let cellData: HSVsStorage
+    
+    var body: some View {
+        Button {
+            print("HScrollViewCell tapped")
+        } label: {
+            HStack(alignment: .top, spacing: 15) {
+                Image(systemName: cellData.systemImageName)
+                    .resizable()
+                    .foregroundColor(cellData.foregroundColor)
+                    .frame(width: 30, height: 30)
+                
+                VStack(alignment: .leading) {
+                    Text(cellData.titleLabel) //색지정안하면 .label색과 동일한 효과
+                        .font(Font.title3)
+                        .fontWeight(Font.Weight.bold)
+                    Text(cellData.dateLabel)
+                        .font(.caption)
+                        .foregroundColor(cellData.foregroundColor)
+                    ZStack {
+                        Color.gray.opacity(0.2)
+                            .frame(width: 80, height: 30)
+                            .cornerRadius(15)
+                        Text(cellData.buttonLabel)
+                            .font(.caption)
+                    }
+                }
+            }
+            .frame(height: 150)
+            .padding()
+        }
+        .cornerRadius(20)
+    }
+}
+
+struct HScrollView_Previews: PreviewProvider {
+    static var previews: some View {
+        HScrollView()
+    }
+}
+
+//MARK: 현재 날짜정보를 format하는 함수구현.
+private func dateToString() -> String {
+    let date = Date()
+    let df = DateFormatter()
+    df.locale = Locale(identifier: "ko_KR")
+    df.dateFormat = "MM월 dd일 (E)"
+    
+    return df.string(from: date)
+}
