@@ -73,10 +73,10 @@ struct AView: View {
     
     let Aproperty: some View =
     HStack {
-        Text("a")
-        Text("a")
-        Text("a")
-        Text("a")
+        Text("aaa")
+        Text("aaa")
+        Text("aaa")
+        Text("aaa")
     }
     
     var body: some View {
@@ -88,10 +88,10 @@ struct BView: View {
     
     @ViewBuilder
     var Bproperty: some View {
-        Text("b")
-        Text("b")
-        Text("b")
-        Text("b")
+        Text("bbb")
+        Text("bbb")
+        Text("bbb")
+        Text("bbb")
     }
     
     var body: some View {
@@ -102,10 +102,10 @@ struct BView: View {
 struct CView: View {
     
     var body: some View {
-        Text("c")
-        Text("c")
-        Text("c")
-        Text("c")
+        Text("ccc")
+        Text("ccc")
+        Text("ccc")
+        Text("ccc")
         Image(systemName: "star")
     }
 }

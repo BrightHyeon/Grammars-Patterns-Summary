@@ -48,11 +48,13 @@ struct HScrollViewCell: View {
                     .resizable()
                     .foregroundColor(cellData.foregroundColor)
                     .frame(width: 30, height: 30)
+                    .padding(.leading, 10)
                 
                 VStack(alignment: .leading) {
                     Text(cellData.titleLabel) //색지정안하면 .label색과 동일한 효과
                         .font(Font.title3)
                         .fontWeight(Font.Weight.bold)
+                        .lineLimit(1)
                     Text(cellData.dateLabel)
                         .font(.caption)
                         .foregroundColor(cellData.foregroundColor)
@@ -60,14 +62,17 @@ struct HScrollViewCell: View {
                         Color.gray.opacity(0.2)
                             .frame(width: 80, height: 30)
                             .cornerRadius(15)
+                            .offset(x: -10, y: 0)
                         Text(cellData.buttonLabel)
                             .font(.caption)
+                            .offset(x: -10, y: 0)
                     }
                     Spacer()
                 }
-                Spacer().frame(width: 30)
+                Spacer()
             }
-            .frame(width: 300, height: 150)
+            .frame(minWidth: 270, maxWidth: 300,
+                   minHeight: 150, maxHeight: 150)
             .padding()
             .overlay {
                 RoundedRectangle(cornerRadius: 20)
