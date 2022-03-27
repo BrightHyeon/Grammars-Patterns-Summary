@@ -26,7 +26,7 @@ struct HScrollView: View {
                 
                 ForEach(cellList, id: \.self) {
                     HScrollViewCell(cellData: $0)
-                        .border(.gray)
+                        .padding()
                 }
                 
                 Spacer()
@@ -63,12 +63,19 @@ struct HScrollViewCell: View {
                         Text(cellData.buttonLabel)
                             .font(.caption)
                     }
+                    Spacer()
                 }
+                Spacer().frame(width: 30)
             }
-            .frame(height: 150)
+            .frame(width: 300, height: 150)
             .padding()
+            .overlay {
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(.gray, lineWidth: 2)
+                //border기능은 view에도 있지만, 고급기능(radius등)을 부여하려면,
+                //overlay활용가능.
+            }
         }
-        .cornerRadius(20)
     }
 }
 
