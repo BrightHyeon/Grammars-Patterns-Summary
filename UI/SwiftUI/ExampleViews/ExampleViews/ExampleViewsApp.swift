@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct ExampleViewsApp: App {
+    
+    let demoData = DemoData() //DemoData객체의 인스턴스 생성.
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(demoData) //DemoDate객체의 인스턴스를 SwiftUI환경에 저장.
         }
     }
 }

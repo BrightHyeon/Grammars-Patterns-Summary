@@ -29,6 +29,8 @@ MARK: - 1. @State private var... 상태 프로퍼티...
  이런 @State상태 프로퍼티는 뷰의 상태를 저장하는 방법을 제공하며 해당 뷰에만 사용할 수 있다.
  즉, 하위 뷰가 아니거나 상태 바인딩이 구현되어 있지 않은 다른 뷰는 접근할 수 없다.
  
+ MARK: @State - $바인딩, @State - 참조, @State - @Binding 전달 등등.
+ 
 MARK: 상태 프로퍼티는 "* 일시적인 것이어서! *" 부모 뷰가 사라지면 그 상태도 사라진다.
  */
 
@@ -37,6 +39,8 @@ MARK: 상태 프로퍼티는 "* 일시적인 것이어서! *" 부모 뷰가 사�
 /*
 MARK: - 2. Observable 객체.
  MARK: @State와 달리, Observable 객체는 여러 다른 뷰들이 외부에서 접근할 수 있는 "* 영구적인 데이터를! *" 표현하기 위해 사용된다.
+ 
+ 몇몇 SwiftUI View에 의해 사용되어야 할 경우에 적합.
  
  Observable객체는 ObservableObject프로토콜을 따르는 '클래스'나 '구조체'형태이다.
  일반적으론, 시간에 따라 변경되는 하나 이상의 데이터 값을 모으고 관리하는 역할을 담당한다.
@@ -63,4 +67,49 @@ MARK: - 2. Observable 객체.
  - @Published 프로퍼티 래퍼 사용하기. : 이 래퍼는 래퍼 프로퍼티 값이 변경될 때마다 모든! 구독자에게 업데이트를 알리게됨.
  
  observable객체 예시) DemoData 파일 참고.
+ 
+ MARK: ObservableObject프로토콜 선언한 observable한 객체 - 그 안의 @Published 래퍼 프로퍼티 - @ObservedObject 래퍼 프로퍼티(구독자) - 구독한 뷰 및 그의 모든 하위뷰가 @State때 했던 것과 같은 방식으로 게시된 프로퍼티에 점근하게 됨.
+ 
+ */
+
+
+/*
+ MARK: - Environment 객체
+ 구독객체(@ObservedObject)는 특정 상태가 앱 내의 몇몇 SwiftUI 뷰에 의해 사용되어야 할 경우에 가장 적합하다.
+ 
+ 그런데!! 어떤 View에서 다른 View로 navigation(이동)할 때 이동될 View에서도 동일한! 구독 객체에 접근해야 한다면, 이동할 때 대상 View로 @ObservedObject에 대한 참조체를 전달해야 할 것이다.
+ 이런 식으로 진행되다보면, 앱 내의 여러 뷰가 동일한 구독 객체에 접근해야 하는 경우, 복잡해질 수가 있다!!
+ 이 때는 Environment객체를 사용하는 것이 좋다.
+ 
+ ex) SubscribeView, SecondView 파일 참고.
+ 
+ Environment객체는 Observable객체와 같은 방식으로 선언된다.
+ 즉, 반드시 ObservableObject 프로토콜을 따라야 하며, 적절한 프로퍼티가 게시!되어야 한다.
+ MARK: 하지만, 중요한!!! 차이점!!!은 이 객체는 SwiftUI환경에 저장되며, 뷰에서 뷰로 전달할 필요 없이 모든 뷰가 접근할 수 있다는 것이다.
+ TODO: 그럼 ObservableObject는 뷰에서 뷰로 전달하는 방식으로만 해야된다는 건가??????
+ 
+ Environment 객체를 구독하는 객체는 @EnvironmentObject 프로퍼티 래퍼를 이용하여 해당 객체를 참조한다.
+ 
+ TODO: Environment객체는 옵저버 내에서 초기화될 수 없으므로?, 접근하는 뷰가 화면을 설정하는 동안 구성해야 한다!?
+ */
+
+
+/*
+ MARK: - Summary
+ 
+ 1. @State
+ : 사용자 인터페이스 레이아웃 내!의 뷰 상태를 저장하는데에 사용.
+ : 현재 컨텐트뷰에 관한 것.
+ : 임시값이기에 해당 뷰가 사라지면 값도 사라짐.
+ 
+ 2. Observable 객체
+ : 사용자 인터페이스 밖!에 있으며, 앱 내의 SwiftUI 뷰 구조체의 하위 뷰에만 필요한 데이터에 사용.
+ : 이 방법을 사용하기 위해선 ObservableObject프로토콜을 준수해야함.
+ : 뷰와 바인딩될 프로퍼티는 @Published 프로퍼티 래퍼를 사용하여 선언.
+ : 바인딩하려면 프로퍼티는 @ObservedObject 프로퍼티 래퍼를 사용해야함.
+ 
+ 3. Environment 객체
+ : 사용자 인터페이스 밖!에 있으며, 여러 뷰가 접근해야하는 데이터일 경우 최고의 해결책.
+ : Observable객체와 동일한 방법으로 선언되지만(ObservableObject프로토콜 준수, @Published 사용 등), Environment객체 바인딩은 @EnvironmentObject 프로퍼티 래퍼를 사용하여 SwiftUI 뷰 파일 내에 선언된다.
+ : SceneDelegate.swift파일, 최신버전에선 App파일의 코드를 통해 뷰 화면이 앱에 추가될 때, Environment 객체 또한 초기화되어야 한다!....?
  */

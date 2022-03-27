@@ -10,7 +10,7 @@ import Combine
 
 class DemoData: ObservableObject {
     
-    @Published var userCount = 0
+    @Published var userCount = 19
     @Published var currentUser = ""
     
     init() {
