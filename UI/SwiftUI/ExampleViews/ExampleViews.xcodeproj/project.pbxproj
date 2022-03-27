@@ -14,12 +14,16 @@
 		964F378C27EDC6E500E6E916 /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F378B27EDC6E500E6E916 /* ReadMe.swift */; };
 		9667BD6727F04E6C00A568DA /* MyHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667BD6627F04E6C00A568DA /* MyHStack.swift */; };
 		9667BD6927F0637500A568DA /* GeometryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667BD6827F0637500A568DA /* GeometryView.swift */; };
+		9667BD6B27F06B7700A568DA /* TestView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667BD6A27F06B7700A568DA /* TestView2.swift */; };
+		9667BD6D27F06F8200A568DA /* WifiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667BD6C27F06F8200A568DA /* WifiImageView.swift */; };
 		96D2261027E9D41400D616E1 /* ExampleViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2260F27E9D41400D616E1 /* ExampleViewsApp.swift */; };
 		96D2261227E9D41400D616E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2261127E9D41400D616E1 /* ContentView.swift */; };
 		96D2261427E9D41500D616E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D2261327E9D41500D616E1 /* Assets.xcassets */; };
 		96D2261727E9D41500D616E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D2261627E9D41500D616E1 /* Preview Assets.xcassets */; };
 		96D2262027E9DBF300D616E1 /* HScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2261F27E9DBF300D616E1 /* HScrollView.swift */; };
 		96D2262227E9DDC400D616E1 /* HSVsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2262127E9DDC400D616E1 /* HSVsStorage.swift */; };
+		96ED9E8027F0712D005895EC /* Readme2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED9E7F27F0712D005895EC /* Readme2.swift */; };
+		96ED9E8227F07832005895EC /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED9E8127F07832005895EC /* DemoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,8 @@
 		964F378B27EDC6E500E6E916 /* ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
 		9667BD6627F04E6C00A568DA /* MyHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHStack.swift; sourceTree = "<group>"; };
 		9667BD6827F0637500A568DA /* GeometryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryView.swift; sourceTree = "<group>"; };
+		9667BD6A27F06B7700A568DA /* TestView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView2.swift; sourceTree = "<group>"; };
+		9667BD6C27F06F8200A568DA /* WifiImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiImageView.swift; sourceTree = "<group>"; };
 		96D2260C27E9D41400D616E1 /* ExampleViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D2260F27E9D41400D616E1 /* ExampleViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewsApp.swift; sourceTree = "<group>"; };
 		96D2261127E9D41400D616E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +43,8 @@
 		96D2261627E9D41500D616E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		96D2261F27E9DBF300D616E1 /* HScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollView.swift; sourceTree = "<group>"; };
 		96D2262127E9DDC400D616E1 /* HSVsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSVsStorage.swift; sourceTree = "<group>"; };
+		96ED9E7F27F0712D005895EC /* Readme2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Readme2.swift; sourceTree = "<group>"; };
+		96ED9E8127F07832005895EC /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				96D2261F27E9DBF300D616E1 /* HScrollView.swift */,
-				964F378327EDC2FA00E6E916 /* TestView.swift */,
 				9667BD6827F0637500A568DA /* GeometryView.swift */,
+				964F378327EDC2FA00E6E916 /* TestView.swift */,
+				9667BD6A27F06B7700A568DA /* TestView2.swift */,
+				96ED9E7E27F07100005895EC /* for TestView2's */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,6 +134,16 @@
 				96D2261627E9D41500D616E1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96ED9E7E27F07100005895EC /* for TestView2's */ = {
+			isa = PBXGroup;
+			children = (
+				96ED9E7F27F0712D005895EC /* Readme2.swift */,
+				9667BD6C27F06F8200A568DA /* WifiImageView.swift */,
+				96ED9E8127F07832005895EC /* DemoData.swift */,
+			);
+			path = "for TestView2's";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,17 +216,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9667BD6D27F06F8200A568DA /* WifiImageView.swift in Sources */,
 				964F378C27EDC6E500E6E916 /* ReadMe.swift in Sources */,
+				96ED9E8027F0712D005895EC /* Readme2.swift in Sources */,
 				964F378427EDC2FA00E6E916 /* TestView.swift in Sources */,
 				96D2262027E9DBF300D616E1 /* HScrollView.swift in Sources */,
 				964F378727EDC35000E6E916 /* StandardBody.swift in Sources */,
 				964F378927EDC54D00E6E916 /* MyVStack.swift in Sources */,
 				964F378227EDC27C00E6E916 /* StandardTitle.swift in Sources */,
 				96D2262227E9DDC400D616E1 /* HSVsStorage.swift in Sources */,
+				96ED9E8227F07832005895EC /* DemoData.swift in Sources */,
 				9667BD6927F0637500A568DA /* GeometryView.swift in Sources */,
 				96D2261227E9D41400D616E1 /* ContentView.swift in Sources */,
 				96D2261027E9D41400D616E1 /* ExampleViewsApp.swift in Sources */,
 				9667BD6727F04E6C00A568DA /* MyHStack.swift in Sources */,
+				9667BD6B27F06B7700A568DA /* TestView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//TODO: - 좀더 공부필요~!@!!!~!!!!
 struct GeometryView: View {
     var body: some View {
         GeometryReader { geometry in //컨테이너뷰의 크기를 파악하여 이를 기준으로, 내부 Views들의 frame에 다가갈 수 있음.
