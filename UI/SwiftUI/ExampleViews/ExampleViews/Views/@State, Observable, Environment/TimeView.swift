@@ -30,6 +30,7 @@ struct TimeView: View {
                         Text("Stop")
                     }
                 }
+                .padding()
                 
                 Button {
                     timerData.resetCount()
@@ -37,9 +38,16 @@ struct TimeView: View {
                     Text("Reset Counter")
                 }
                 .padding()
+                
+                //Link로 연결하면서, 나의 timerData를 전달!
+                NavigationLink(destination: ThirdView(timerData: timerData)) {
+                    Text("Next Screen")
+                }
+
 
             }
-            
+            .navigationTitle("For Use ObservableObject")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

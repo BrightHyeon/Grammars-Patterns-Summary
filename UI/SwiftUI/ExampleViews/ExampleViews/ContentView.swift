@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        RotationView()
+        TabView {
+            TimeView()
+                .tabItem {
+                    Image(systemName: "star")
+                }
+            
+            SecondView()
+                .tabItem {
+                    Image(systemName: "calendar")
+                }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        RotationView()
+        ContentView()
     }
 }

@@ -1,24 +1,25 @@
 //
-//  SecondView.swift
+//  ThirdView.swift
 //  ExampleViews
 //
-//  Created by HyeonSoo Kim on 2022/03/27.
+//  Created by HyeonSoo Kim on 2022/03/28.
 //
 
 import SwiftUI
 
-struct SecondView: View {
+struct ThirdView: View {
     
-    @ObservedObject var timerData: TimerData = TimerData()
-    //얘는 다른뷰를 통해 값을 전달받은 것이아니라, 자기 스스로 클래스의 인스턴스를 새로 생성한 것.
+    //이전뷰를 통해 timerData를 전달받을 프로퍼티.
+    @ObservedObject var timerData: TimerData
+    //이 역시 같은 @ObservedObject 프로퍼티 래퍼로 씌어줘야함.
+    //그래야 값이 변경될때마다 뷰가 정상적으로 업데이트된다.(SwiftUI에 의해서!)
     
     var body: some View {
-        
         VStack {
-            Text("Timer count = \(timerData.timeCount)")
+            Text("Third View")
                 .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding()
+            Text("Timer Count = \(timerData.timeCount)")
+                .font(.headline)
             
             Button {
                 timerData.isPaused = !timerData.isPaused
@@ -38,15 +39,13 @@ struct SecondView: View {
                 Text("Reset Counter")
             }
             .padding()
-
         }
-        
+        .padding()
     }
 }
 
-struct SecondView_Previews: PreviewProvider {
+struct ThirdView_Previews: PreviewProvider {
     static var previews: some View {
-        SecondView()
-            .environmentObject(DemoData())
+        ThirdView(timerData: TimerData())
     }
 }
