@@ -27,6 +27,8 @@
 		96ED9E8227F07832005895EC /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED9E8127F07832005895EC /* DemoData.swift */; };
 		96ED9E8427F07A5E005895EC /* SubscribeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED9E8327F07A5E005895EC /* SubscribeView.swift */; };
 		96ED9E8627F07CF8005895EC /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED9E8527F07CF8005895EC /* SecondView.swift */; };
+		96F210FE27F1CE6100C02792 /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F210FD27F1CE6100C02792 /* TimerData.swift */; };
+		96F2110027F1D3AB00C02792 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F210FF27F1D3AB00C02792 /* TimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		96ED9E8127F07832005895EC /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		96ED9E8327F07A5E005895EC /* SubscribeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeView.swift; sourceTree = "<group>"; };
 		96ED9E8527F07CF8005895EC /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		96F210FD27F1CE6100C02792 /* TimerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerData.swift; sourceTree = "<group>"; };
+		96F210FF27F1D3AB00C02792 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,11 +152,21 @@
 				96ED9E7F27F0712D005895EC /* Readme2.swift */,
 				9667BD6A27F06B7700A568DA /* TestView2.swift */,
 				9667BD6C27F06F8200A568DA /* WifiImageView.swift */,
-				96ED9E8127F07832005895EC /* DemoData.swift */,
 				96ED9E8327F07A5E005895EC /* SubscribeView.swift */,
 				96ED9E8527F07CF8005895EC /* SecondView.swift */,
+				96F210FF27F1D3AB00C02792 /* TimeView.swift */,
+				96F210FC27F1CE4400C02792 /* ObservableObject */,
 			);
 			path = "@State, Observable, Environment";
+			sourceTree = "<group>";
+		};
+		96F210FC27F1CE4400C02792 /* ObservableObject */ = {
+			isa = PBXGroup;
+			children = (
+				96ED9E8127F07832005895EC /* DemoData.swift */,
+				96F210FD27F1CE6100C02792 /* TimerData.swift */,
+			);
+			path = ObservableObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +246,10 @@
 				964F378427EDC2FA00E6E916 /* TestView.swift in Sources */,
 				96D2262027E9DBF300D616E1 /* HScrollView.swift in Sources */,
 				964F378727EDC35000E6E916 /* StandardBody.swift in Sources */,
+				96F2110027F1D3AB00C02792 /* TimeView.swift in Sources */,
 				964F378927EDC54D00E6E916 /* MyVStack.swift in Sources */,
 				964F378227EDC27C00E6E916 /* StandardTitle.swift in Sources */,
+				96F210FE27F1CE6100C02792 /* TimerData.swift in Sources */,
 				96D2262227E9DDC400D616E1 /* HSVsStorage.swift in Sources */,
 				96ED9E8227F07832005895EC /* DemoData.swift in Sources */,
 				9667BD6927F0637500A568DA /* GeometryView.swift in Sources */,

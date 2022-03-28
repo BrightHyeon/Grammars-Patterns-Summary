@@ -43,7 +43,8 @@ MARK: - 2. Observable 객체.
  몇몇 SwiftUI View에 의해 사용되어야 할 경우에 적합.
  
  Observable객체는 ObservableObject프로토콜을 따르는 '클래스'나 '구조체'형태이다.
- 일반적으론, 시간에 따라 변경되는 하나 이상의 데이터 값을 모으고 관리하는 역할을 담당한다.
+ MARK: 일반적으론, 시간에 따라 변경되는 하나 이상의 데이터 값을 모으고 관리하는 역할을 담당한다.
+ -> 시간이 지남에 따라 반복적으로 변하는 데이터 값인 동적 데이터를 래핑하는데 사용될 때 특히!!! 강력하다!!!.
  
  또한, 타이머나 알림(notification)과 같은 이벤트를 처리하기 위해 사용될 수도 있다.
  
@@ -86,11 +87,11 @@ MARK: - 2. Observable 객체.
  Environment객체는 Observable객체와 같은 방식으로 선언된다.
  즉, 반드시 ObservableObject 프로토콜을 따라야 하며, 적절한 프로퍼티가 게시!되어야 한다.
  MARK: 하지만, 중요한!!! 차이점!!!은 이 객체는 SwiftUI환경에 저장되며, 뷰에서 뷰로 전달할 필요 없이 모든 뷰가 접근할 수 있다는 것이다.
- TODO: 그럼 ObservableObject는 뷰에서 뷰로 전달하는 방식으로만 해야된다는 건가??????
+ TODO: 그럼 ObservableObject는 뷰에서 뷰로 전달하는 방식으로만 해야된다는 건가?????? -> 아직 확실친 않으나, Observable객체는 다른뷰로 전달되는 방식이고, Environment는 전달하지 않아도 다른 뷰에서 접근이 가능하단 것 같음~!
  
  Environment 객체를 구독하는 객체는 @EnvironmentObject 프로퍼티 래퍼를 이용하여 해당 객체를 참조한다.
  
- TODO: Environment객체는 옵저버 내에서 초기화될 수 없으므로?, 접근하는 뷰가 화면을 설정하는 동안 구성해야 한다!?
+ TODO: Environment객체는 옵저버 내에서 초기화될 수 없으므로?, 접근하는 뷰가 화면을 설정하는 동안 구성해야 한다!? -> willConnectTo 이야기하는 것 같은데 원리는 아직 잘 모르겠음. 
  */
 
 
@@ -107,9 +108,12 @@ MARK: - 2. Observable 객체.
  : 이 방법을 사용하기 위해선 ObservableObject프로토콜을 준수해야함.
  : 뷰와 바인딩될 프로퍼티는 @Published 프로퍼티 래퍼를 사용하여 선언.
  : 바인딩하려면 프로퍼티는 @ObservedObject 프로퍼티 래퍼를 사용해야함.
+ : 시간이 지남에 따라 반복적으로 변하는 동적 데이터를 래핑하는데 특히 강력한 기능.
+ : 데이터는 Observable객체로 취급될 것이며 다른 뷰로 전달될 것.
  
  3. Environment 객체
  : 사용자 인터페이스 밖!에 있으며, 여러 뷰가 접근해야하는 데이터일 경우 최고의 해결책.
  : Observable객체와 동일한 방법으로 선언되지만(ObservableObject프로토콜 준수, @Published 사용 등), Environment객체 바인딩은 @EnvironmentObject 프로퍼티 래퍼를 사용하여 SwiftUI 뷰 파일 내에 선언된다.
  : SceneDelegate.swift파일, 최신버전에선 App파일의 코드를 통해 뷰 화면이 앱에 추가될 때, Environment 객체 또한 초기화되어야 한다!....?
+ : 다른 뷰로 전달하지 않아도 다른 뷰들이 접근할 수 있음.
  */
