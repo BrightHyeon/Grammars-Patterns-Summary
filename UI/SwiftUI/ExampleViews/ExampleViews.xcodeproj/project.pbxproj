@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9638EBB627F1B9E100104642 /* RotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638EBB527F1B9E100104642 /* RotationView.swift */; };
 		964F378227EDC27C00E6E916 /* StandardTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F378127EDC27C00E6E916 /* StandardTitle.swift */; };
 		964F378427EDC2FA00E6E916 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F378327EDC2FA00E6E916 /* TestView.swift */; };
 		964F378727EDC35000E6E916 /* StandardBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F378627EDC35000E6E916 /* StandardBody.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9638EBB527F1B9E100104642 /* RotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationView.swift; sourceTree = "<group>"; };
 		964F378127EDC27C00E6E916 /* StandardTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTitle.swift; sourceTree = "<group>"; };
 		964F378327EDC2FA00E6E916 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		964F378627EDC35000E6E916 /* StandardBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardBody.swift; sourceTree = "<group>"; };
@@ -76,7 +78,8 @@
 				96D2261F27E9DBF300D616E1 /* HScrollView.swift */,
 				9667BD6827F0637500A568DA /* GeometryView.swift */,
 				964F378327EDC2FA00E6E916 /* TestView.swift */,
-				96ED9E7E27F07100005895EC /* @State, Observable */,
+				96ED9E7E27F07100005895EC /* @State, Observable, Environment */,
+				9638EBB527F1B9E100104642 /* RotationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,7 +142,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		96ED9E7E27F07100005895EC /* @State, Observable */ = {
+		96ED9E7E27F07100005895EC /* @State, Observable, Environment */ = {
 			isa = PBXGroup;
 			children = (
 				96ED9E7F27F0712D005895EC /* Readme2.swift */,
@@ -149,7 +152,7 @@
 				96ED9E8327F07A5E005895EC /* SubscribeView.swift */,
 				96ED9E8527F07CF8005895EC /* SecondView.swift */,
 			);
-			path = "@State, Observable";
+			path = "@State, Observable, Environment";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +228,7 @@
 				9667BD6D27F06F8200A568DA /* WifiImageView.swift in Sources */,
 				964F378C27EDC6E500E6E916 /* ReadMe.swift in Sources */,
 				96ED9E8027F0712D005895EC /* Readme2.swift in Sources */,
+				9638EBB627F1B9E100104642 /* RotationView.swift in Sources */,
 				964F378427EDC2FA00E6E916 /* TestView.swift in Sources */,
 				96D2262027E9DBF300D616E1 /* HScrollView.swift in Sources */,
 				964F378727EDC35000E6E916 /* StandardBody.swift in Sources */,
