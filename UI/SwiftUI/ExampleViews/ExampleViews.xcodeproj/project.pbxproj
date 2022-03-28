@@ -17,6 +17,9 @@
 		9667BD6927F0637500A568DA /* GeometryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667BD6827F0637500A568DA /* GeometryView.swift */; };
 		9667BD6B27F06B7700A568DA /* TestView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667BD6A27F06B7700A568DA /* TestView2.swift */; };
 		9667BD6D27F06F8200A568DA /* WifiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667BD6C27F06F8200A568DA /* WifiImageView.swift */; };
+		966D6DB327F1EA8900DA024B /* EnvTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D6DB227F1EA8900DA024B /* EnvTimeView.swift */; };
+		966D6DB527F1EAEB00DA024B /* EnvSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D6DB427F1EAEB00DA024B /* EnvSecondView.swift */; };
+		966D6DB727F1EAF300DA024B /* EnvThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D6DB627F1EAF300DA024B /* EnvThirdView.swift */; };
 		96D2261027E9D41400D616E1 /* ExampleViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2260F27E9D41400D616E1 /* ExampleViewsApp.swift */; };
 		96D2261227E9D41400D616E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2261127E9D41400D616E1 /* ContentView.swift */; };
 		96D2261427E9D41500D616E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D2261327E9D41500D616E1 /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 		9667BD6827F0637500A568DA /* GeometryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryView.swift; sourceTree = "<group>"; };
 		9667BD6A27F06B7700A568DA /* TestView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView2.swift; sourceTree = "<group>"; };
 		9667BD6C27F06F8200A568DA /* WifiImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiImageView.swift; sourceTree = "<group>"; };
+		966D6DB227F1EA8900DA024B /* EnvTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvTimeView.swift; sourceTree = "<group>"; };
+		966D6DB427F1EAEB00DA024B /* EnvSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvSecondView.swift; sourceTree = "<group>"; };
+		966D6DB627F1EAF300DA024B /* EnvThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvThirdView.swift; sourceTree = "<group>"; };
 		96D2260C27E9D41400D616E1 /* ExampleViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D2260F27E9D41400D616E1 /* ExampleViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewsApp.swift; sourceTree = "<group>"; };
 		96D2261127E9D41400D616E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,8 +92,8 @@
 				96D2261F27E9DBF300D616E1 /* HScrollView.swift */,
 				9667BD6827F0637500A568DA /* GeometryView.swift */,
 				964F378327EDC2FA00E6E916 /* TestView.swift */,
-				96ED9E7E27F07100005895EC /* @State, Observable, Environment */,
 				9638EBB527F1B9E100104642 /* RotationView.swift */,
+				96ED9E7E27F07100005895EC /* @State, Observable, Environment */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +115,16 @@
 				9667BD6627F04E6C00A568DA /* MyHStack.swift */,
 			);
 			path = ViewBuilders;
+			sourceTree = "<group>";
+		};
+		966D6DB827F1EAFC00DA024B /* ForTest(@Environment) */ = {
+			isa = PBXGroup;
+			children = (
+				966D6DB227F1EA8900DA024B /* EnvTimeView.swift */,
+				966D6DB427F1EAEB00DA024B /* EnvSecondView.swift */,
+				966D6DB627F1EAF300DA024B /* EnvThirdView.swift */,
+			);
+			path = "ForTest(@Environment)";
 			sourceTree = "<group>";
 		};
 		96D2260327E9D41400D616E1 = {
@@ -157,10 +173,8 @@
 				9667BD6A27F06B7700A568DA /* TestView2.swift */,
 				9667BD6C27F06F8200A568DA /* WifiImageView.swift */,
 				96ED9E8327F07A5E005895EC /* SubscribeView.swift */,
-				96F210FF27F1D3AB00C02792 /* TimeView.swift */,
-				96ED9E8527F07CF8005895EC /* SecondView.swift */,
-				96F2110427F1E4CA00C02792 /* ThirdView.swift */,
-				96F2110327F1E27200C02792 /* ForTest */,
+				96F2110327F1E27200C02792 /* ForTest(@Observed) */,
+				966D6DB827F1EAFC00DA024B /* ForTest(@Environment) */,
 				96F210FC27F1CE4400C02792 /* ObservableObject */,
 			);
 			path = "@State, Observable, Environment";
@@ -175,12 +189,15 @@
 			path = ObservableObject;
 			sourceTree = "<group>";
 		};
-		96F2110327F1E27200C02792 /* ForTest */ = {
+		96F2110327F1E27200C02792 /* ForTest(@Observed) */ = {
 			isa = PBXGroup;
 			children = (
+				96F210FF27F1D3AB00C02792 /* TimeView.swift */,
+				96ED9E8527F07CF8005895EC /* SecondView.swift */,
+				96F2110427F1E4CA00C02792 /* ThirdView.swift */,
 				96F2110127F1E26E00C02792 /* TimeAndSecondTabView.swift */,
 			);
-			path = ForTest;
+			path = "ForTest(@Observed)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +276,9 @@
 				9638EBB627F1B9E100104642 /* RotationView.swift in Sources */,
 				964F378427EDC2FA00E6E916 /* TestView.swift in Sources */,
 				96D2262027E9DBF300D616E1 /* HScrollView.swift in Sources */,
+				966D6DB527F1EAEB00DA024B /* EnvSecondView.swift in Sources */,
 				964F378727EDC35000E6E916 /* StandardBody.swift in Sources */,
+				966D6DB727F1EAF300DA024B /* EnvThirdView.swift in Sources */,
 				96F2110027F1D3AB00C02792 /* TimeView.swift in Sources */,
 				96F2110527F1E4CA00C02792 /* ThirdView.swift in Sources */,
 				964F378927EDC54D00E6E916 /* MyVStack.swift in Sources */,
@@ -271,6 +290,7 @@
 				9667BD6927F0637500A568DA /* GeometryView.swift in Sources */,
 				96ED9E8427F07A5E005895EC /* SubscribeView.swift in Sources */,
 				96D2261227E9D41400D616E1 /* ContentView.swift in Sources */,
+				966D6DB327F1EA8900DA024B /* EnvTimeView.swift in Sources */,
 				96D2261027E9D41400D616E1 /* ExampleViewsApp.swift in Sources */,
 				9667BD6727F04E6C00A568DA /* MyHStack.swift in Sources */,
 				9667BD6B27F06B7700A568DA /* TestView2.swift in Sources */,

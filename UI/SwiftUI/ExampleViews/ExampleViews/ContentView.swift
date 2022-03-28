@@ -11,12 +11,12 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            TimeView()
+            EnvTimeView()
                 .tabItem {
                     Image(systemName: "star")
                 }
             
-            SecondView()
+            EnvSecondView()
                 .tabItem {
                     Image(systemName: "calendar")
                 }
@@ -27,5 +27,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(TimerData())
     }
 }
