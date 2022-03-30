@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		961CC38427F463BC00541AFD /* AlignmentGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CC38327F463BC00541AFD /* AlignmentGuideView.swift */; };
+		961CC38627F4734A00541AFD /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CC38527F4734A00541AFD /* ListView.swift */; };
 		9638EBB627F1B9E100104642 /* RotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638EBB527F1B9E100104642 /* RotationView.swift */; };
 		964F378227EDC27C00E6E916 /* StandardTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F378127EDC27C00E6E916 /* StandardTitle.swift */; };
 		964F378427EDC2FA00E6E916 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F378327EDC2FA00E6E916 /* TestView.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		961CC38327F463BC00541AFD /* AlignmentGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuideView.swift; sourceTree = "<group>"; };
+		961CC38527F4734A00541AFD /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		9638EBB527F1B9E100104642 /* RotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationView.swift; sourceTree = "<group>"; };
 		964F378127EDC27C00E6E916 /* StandardTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTitle.swift; sourceTree = "<group>"; };
 		964F378327EDC2FA00E6E916 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				964F378327EDC2FA00E6E916 /* TestView.swift */,
 				9638EBB527F1B9E100104642 /* RotationView.swift */,
 				961CC38327F463BC00541AFD /* AlignmentGuideView.swift */,
+				961CC38527F4734A00541AFD /* ListView.swift */,
 				96ED9E7E27F07100005895EC /* @State, Observable, Environment */,
 			);
 			path = Views;
@@ -290,6 +293,7 @@
 				96F2110227F1E26E00C02792 /* TimeAndSecondTabView.swift in Sources */,
 				96F210FE27F1CE6100C02792 /* TimerData.swift in Sources */,
 				96D2262227E9DDC400D616E1 /* HSVsStorage.swift in Sources */,
+				961CC38627F4734A00541AFD /* ListView.swift in Sources */,
 				96ED9E8227F07832005895EC /* DemoData.swift in Sources */,
 				9667BD6927F0637500A568DA /* GeometryView.swift in Sources */,
 				96ED9E8427F07A5E005895EC /* SubscribeView.swift in Sources */,
