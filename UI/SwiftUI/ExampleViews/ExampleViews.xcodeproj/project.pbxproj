@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961CC38427F463BC00541AFD /* AlignmentGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CC38327F463BC00541AFD /* AlignmentGuideView.swift */; };
 		9638EBB627F1B9E100104642 /* RotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638EBB527F1B9E100104642 /* RotationView.swift */; };
 		964F378227EDC27C00E6E916 /* StandardTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F378127EDC27C00E6E916 /* StandardTitle.swift */; };
 		964F378427EDC2FA00E6E916 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F378327EDC2FA00E6E916 /* TestView.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		961CC38327F463BC00541AFD /* AlignmentGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuideView.swift; sourceTree = "<group>"; };
 		9638EBB527F1B9E100104642 /* RotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationView.swift; sourceTree = "<group>"; };
 		964F378127EDC27C00E6E916 /* StandardTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTitle.swift; sourceTree = "<group>"; };
 		964F378327EDC2FA00E6E916 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				9667BD6827F0637500A568DA /* GeometryView.swift */,
 				964F378327EDC2FA00E6E916 /* TestView.swift */,
 				9638EBB527F1B9E100104642 /* RotationView.swift */,
+				961CC38327F463BC00541AFD /* AlignmentGuideView.swift */,
 				96ED9E7E27F07100005895EC /* @State, Observable, Environment */,
 			);
 			path = Views;
@@ -275,6 +278,7 @@
 				96ED9E8027F0712D005895EC /* Readme2.swift in Sources */,
 				9638EBB627F1B9E100104642 /* RotationView.swift in Sources */,
 				964F378427EDC2FA00E6E916 /* TestView.swift in Sources */,
+				961CC38427F463BC00541AFD /* AlignmentGuideView.swift in Sources */,
 				96D2262027E9DBF300D616E1 /* HScrollView.swift in Sources */,
 				966D6DB527F1EAEB00DA024B /* EnvSecondView.swift in Sources */,
 				964F378727EDC35000E6E916 /* StandardBody.swift in Sources */,

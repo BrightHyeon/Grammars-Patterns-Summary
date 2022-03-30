@@ -67,9 +67,14 @@ struct HScrollViewCell: View {
                             .font(.caption)
 //                            .offset(x: -10, y: 0)
                     }
-                    .alignmentGuide(.leading) { d in 10 }
+//                    .alignmentGuide(.leading) { d in 10 }
                     //MARK: .alignmentGuide를 이용해서 특정요소만 위치 조절도 가능!!!
                     //단, 부모 스택의 정렬 타입과 일치해야함.
+                    //d = ViewDimensions객체임. 뷰의 폭과 넓이값을 가짐.
+                    .alignmentGuide(.leading) { d in
+                        d.width / 7 //이 뷰 넓이를 7로 나눈만큼만 이동하라~~~.
+                    }
+        
                     Spacer()
                 }
                 Spacer()
