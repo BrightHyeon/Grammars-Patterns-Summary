@@ -43,7 +43,7 @@ struct HScrollViewCell: View {
         Button {
             print("HScrollViewCell tapped")
         } label: {
-            HStack(alignment: .top, spacing: 15) {
+            HStack(alignment: .top, spacing: 5) {
                 Image(systemName: cellData.systemImageName)
                     .resizable()
                     .foregroundColor(cellData.foregroundColor)
@@ -62,11 +62,14 @@ struct HScrollViewCell: View {
                         Color.gray.opacity(0.2)
                             .frame(width: 80, height: 30)
                             .cornerRadius(15)
-                            .offset(x: -10, y: 0)
+//                            .offset(x: -10, y: 0)
                         Text(cellData.buttonLabel)
                             .font(.caption)
-                            .offset(x: -10, y: 0)
+//                            .offset(x: -10, y: 0)
                     }
+                    .alignmentGuide(.leading) { d in 10 }
+                    //MARK: .alignmentGuide를 이용해서 특정요소만 위치 조절도 가능!!!
+                    //단, 부모 스택의 정렬 타입과 일치해야함.
                     Spacer()
                 }
                 Spacer()

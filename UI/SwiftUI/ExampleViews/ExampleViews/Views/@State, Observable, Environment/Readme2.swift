@@ -116,7 +116,7 @@ MARK: - 2. Observable 객체.
  : MARK: 작동방식은 TimeAndSecondTabView 파일을 참고하면 확실히 이해될 것임. -> 서로 전달된 형태는 함께 동일한 값을 가지고 동작함. 반면, 새로 인스턴스를 생성하면, 아예 다른 데이터흐름을 갖는 것임!
  
  3. Environment 객체
- : 사용자 인터페이스 밖!에 있으며, 여러 뷰가 접근해야하는 데이터일 경우 최고의 해결책.
+ : MARK: 사용자 인터페이스 밖!에 있으며, 여러 뷰가 접근해야하는 데이터일 경우 최고의 해결책.!!!!!!!!!! 어찌보면?? Observable의 상위호환같다 생각할 수도 있지만!!! 만약 같은 값을 사용하고싶지않을경우에는!!! @ObservedObject를 사용하는 것이 옳아보임!!!!
  : Observable객체와 동일한 방법으로 선언되지만(ObservableObject프로토콜 준수, @Published 사용 등), Environment객체 바인딩은 @EnvironmentObject 프로퍼티 래퍼를 사용하여 SwiftUI 뷰 파일 내에 선언된다.
  : SceneDelegate.swift파일, 최신버전에선 App파일의 코드를 통해 뷰 화면이 앱에 추가될 때, Environment 객체 또한 초기화되어야 한다!....?
  : 다른 뷰로 전달하지 않아도 다른 뷰들이 접근할 수 있음.
