@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		961CC38427F463BC00541AFD /* AlignmentGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CC38327F463BC00541AFD /* AlignmentGuideView.swift */; };
 		961CC38627F4734A00541AFD /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CC38527F4734A00541AFD /* ListView.swift */; };
+		963112EE27F6FB30005293D4 /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963112ED27F6FB30005293D4 /* Just.swift */; };
+		963112F027F6FE91005293D4 /* DrawDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963112EF27F6FE91005293D4 /* DrawDemoView.swift */; };
+		963112F327F6FEF1005293D4 /* ReadMe_Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963112F227F6FEF1005293D4 /* ReadMe_Drawing.swift */; };
 		9638EBB627F1B9E100104642 /* RotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638EBB527F1B9E100104642 /* RotationView.swift */; };
 		963D910727F5B5E2007AB68A /* AdvanceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D910627F5B5E2007AB68A /* AdvanceListView.swift */; };
 		963D910927F5B7D4007AB68A /* JSONDataLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D910827F5B7D4007AB68A /* JSONDataLoading.swift */; };
@@ -43,6 +46,9 @@
 /* Begin PBXFileReference section */
 		961CC38327F463BC00541AFD /* AlignmentGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuideView.swift; sourceTree = "<group>"; };
 		961CC38527F4734A00541AFD /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		963112ED27F6FB30005293D4 /* Just.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just.swift; sourceTree = "<group>"; };
+		963112EF27F6FE91005293D4 /* DrawDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDemoView.swift; sourceTree = "<group>"; };
+		963112F227F6FEF1005293D4 /* ReadMe_Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe_Drawing.swift; sourceTree = "<group>"; };
 		9638EBB527F1B9E100104642 /* RotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationView.swift; sourceTree = "<group>"; };
 		963D910627F5B5E2007AB68A /* AdvanceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceListView.swift; sourceTree = "<group>"; };
 		963D910827F5B7D4007AB68A /* JSONDataLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataLoading.swift; sourceTree = "<group>"; };
@@ -86,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		963112F127F6FEDC005293D4 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				963112F227F6FEF1005293D4 /* ReadMe_Drawing.swift */,
+				963112EF27F6FE91005293D4 /* DrawDemoView.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
 		964F377F27EDC22400E6E916 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +120,8 @@
 				961CC38327F463BC00541AFD /* AlignmentGuideView.swift */,
 				961CC38527F4734A00541AFD /* ListView.swift */,
 				963D910627F5B5E2007AB68A /* AdvanceListView.swift */,
+				963112ED27F6FB30005293D4 /* Just.swift */,
+				963112F127F6FEDC005293D4 /* Drawing */,
 				96ED9E7E27F07100005895EC /* @State, Observable, Environment */,
 			);
 			path = Views;
@@ -285,10 +302,12 @@
 				9667BD6D27F06F8200A568DA /* WifiImageView.swift in Sources */,
 				964F378C27EDC6E500E6E916 /* ReadMe.swift in Sources */,
 				96ED9E8027F0712D005895EC /* Readme2.swift in Sources */,
+				963112EE27F6FB30005293D4 /* Just.swift in Sources */,
 				9638EBB627F1B9E100104642 /* RotationView.swift in Sources */,
 				964F378427EDC2FA00E6E916 /* TestView.swift in Sources */,
 				961CC38427F463BC00541AFD /* AlignmentGuideView.swift in Sources */,
 				96D2262027E9DBF300D616E1 /* HScrollView.swift in Sources */,
+				963112F327F6FEF1005293D4 /* ReadMe_Drawing.swift in Sources */,
 				966D6DB527F1EAEB00DA024B /* EnvSecondView.swift in Sources */,
 				964F378727EDC35000E6E916 /* StandardBody.swift in Sources */,
 				966D6DB727F1EAF300DA024B /* EnvThirdView.swift in Sources */,
@@ -298,6 +317,7 @@
 				963D910727F5B5E2007AB68A /* AdvanceListView.swift in Sources */,
 				964F378227EDC27C00E6E916 /* StandardTitle.swift in Sources */,
 				96F2110227F1E26E00C02792 /* TimeAndSecondTabView.swift in Sources */,
+				963112F027F6FE91005293D4 /* DrawDemoView.swift in Sources */,
 				96F210FE27F1CE6100C02792 /* TimerData.swift in Sources */,
 				96D2262227E9DDC400D616E1 /* HSVsStorage.swift in Sources */,
 				963D910927F5B7D4007AB68A /* JSONDataLoading.swift in Sources */,
