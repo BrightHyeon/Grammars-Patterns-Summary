@@ -41,6 +41,7 @@ import SwiftUI
  -> .scaleEffect의 scale값은 1이 자신의 원래 크기이며, 수치가 작아질수록 원래보다 작게, 수치가 커질수록 원래보다 커진다.!!!
  
  -> MARK: Animation은 하나 이상의 수정자에 적용할 수 있다. Ex) 회전 효과 + 크기 변화 효과
+ -> TODO: 다시 원점으로 돌아가는 현상 어떻게 처리할지.
  
  3. 공통
  -> MARK: 둘다 anchor 매개변수를 통해, "회전축" or "크기가 커지는 방향" 등을 지정할 수 있다. 
@@ -49,7 +50,7 @@ import SwiftUI
  MARK: Animation 반복
  -> 원래 default로는 애니메이션은 단 한번만 수행된다.
  -> but, 한 번 이상 반복하도록 구성할 수도 있다.
- -> MARK: 구현은 간단하다. .animation() modifier안의 Animation객체의 마지막에 .repeatCount()수정자를 지정하면된다! 무함대로하려면 .repeatForever()
+ -> MARK: 구현은 간단하다. .animation() modifier안의 Animation객체의 마지막에 .repeatCount()수정자를 지정하면된다! 무함대로하려면 .repeatForever() -> autoReverse: false 권장!
  -> 근데 웬만하면 쓰지말자. 동작이 이상하다;
  
  MARK: 명시적 애니메이션 (withAnimation)
@@ -59,8 +60,23 @@ import SwiftUI
  -> withAnimation() 클로저 내에서 변경된 프로퍼티만 애니메이션된다. 
  
  
+ MARK: 번외. 응용. 애니메이션과 상태 바인딩.!!!
+ -> 상태값(@State) 변경의 결과로 일어나는 뷰의 변화를 애니메이션되도록 상태 프로퍼티 바인딩에 애니메이션을 적용해보기!
+ 
  MARK: Transition
  -> 레이아웃에서 뷰가 추가되거나 제거될 때 뷰가 어떻게 나타나고 사라질지를 정의한다.
  -> ex) 뷰가 추가될 때 미끄러져 들어오고 사라질 때는 움츠러들며 사라지도록 정의하는 것이 가능.
  
+ -> SwiftUI 도서 302page 참고.
+ -> 혹은 ExplicitAnimationView Toggle부분 참고.
+ 
+ -> transition() modifier에 전환스타일 modifier를 전달하여 지정할 수도 있다.
+ <종류>
+ 1) .slide: 뷰가 슬라이딩하여 들어오거나 나간다.
+ 2) .scale: 뷰의 크기가 커지면서 나타나고 작아지면서 사라진다.
+ 3) .move(edge: edge): 지정된 방향으로 뷰가 이동되며, 추가되거나 제거된다.
+ 4) .opacity: 디폴트 전환 효과로 페이드되는 동안 크기와 위치를 유지한다.
+ 
+ -> 음 써봤을 때, 체감은 그냥 뷰 사라질때만 transition효과 나타나고있다~ @ 해결. preview에서만 그리보이는거였다.
+ -> .combined(with:)사용하여 여러 transition을 중복시킬수있고, combined()를 계속 이어서 3개이상도 중복시킬수있다!
  */

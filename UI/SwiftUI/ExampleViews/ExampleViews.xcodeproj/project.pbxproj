@@ -32,6 +32,8 @@
 		96A2FBA227F815A60063A81F /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FBA127F815A60063A81F /* AnimationView.swift */; };
 		96A2FBA527F816D70063A81F /* ReadMe_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FBA427F816D70063A81F /* ReadMe_Animation.swift */; };
 		96A2FBA727F833010063A81F /* ExplicitAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FBA627F833010063A81F /* ExplicitAnimationView.swift */; };
+		96A2FBA927F8423A0063A81F /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FBA827F8423A0063A81F /* TransitionView.swift */; };
+		96A2FBAB27F845D40063A81F /* CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FBAA27F845D40063A81F /* CustomTransition.swift */; };
 		96D2261027E9D41400D616E1 /* ExampleViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2260F27E9D41400D616E1 /* ExampleViewsApp.swift */; };
 		96D2261227E9D41400D616E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2261127E9D41400D616E1 /* ContentView.swift */; };
 		96D2261427E9D41500D616E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D2261327E9D41500D616E1 /* Assets.xcassets */; };
@@ -74,6 +76,8 @@
 		96A2FBA127F815A60063A81F /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		96A2FBA427F816D70063A81F /* ReadMe_Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe_Animation.swift; sourceTree = "<group>"; };
 		96A2FBA627F833010063A81F /* ExplicitAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitAnimationView.swift; sourceTree = "<group>"; };
+		96A2FBA827F8423A0063A81F /* TransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
+		96A2FBAA27F845D40063A81F /* CustomTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransition.swift; sourceTree = "<group>"; };
 		96D2260C27E9D41400D616E1 /* ExampleViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D2260F27E9D41400D616E1 /* ExampleViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewsApp.swift; sourceTree = "<group>"; };
 		96D2261127E9D41400D616E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 				96A2FBA427F816D70063A81F /* ReadMe_Animation.swift */,
 				96A2FBA127F815A60063A81F /* AnimationView.swift */,
 				96A2FBA627F833010063A81F /* ExplicitAnimationView.swift */,
+				96A2FBA827F8423A0063A81F /* TransitionView.swift */,
+				96A2FBAA27F845D40063A81F /* CustomTransition.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 				963112EE27F6FB30005293D4 /* Just.swift in Sources */,
 				9638EBB627F1B9E100104642 /* RotationView.swift in Sources */,
 				964F378427EDC2FA00E6E916 /* TestView.swift in Sources */,
+				96A2FBAB27F845D40063A81F /* CustomTransition.swift in Sources */,
 				961CC38427F463BC00541AFD /* AlignmentGuideView.swift in Sources */,
 				96D2262027E9DBF300D616E1 /* HScrollView.swift in Sources */,
 				963112F327F6FEF1005293D4 /* ReadMe_Drawing.swift in Sources */,
@@ -359,6 +366,7 @@
 				9667BD6727F04E6C00A568DA /* MyHStack.swift in Sources */,
 				9667BD6B27F06B7700A568DA /* TestView2.swift in Sources */,
 				96ED9E8627F07CF8005895EC /* SecondView.swift in Sources */,
+				96A2FBA927F8423A0063A81F /* TransitionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
