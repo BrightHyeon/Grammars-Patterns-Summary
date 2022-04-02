@@ -29,6 +29,9 @@
 		966D6DB727F1EAF300DA024B /* EnvThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D6DB627F1EAF300DA024B /* EnvThirdView.swift */; };
 		96A2FB9E27F7F35B0063A81F /* QuadAndCurveShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FB9D27F7F35B0063A81F /* QuadAndCurveShape.swift */; };
 		96A2FBA027F808460063A81F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FB9F27F808460063A81F /* GradientView.swift */; };
+		96A2FBA227F815A60063A81F /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FBA127F815A60063A81F /* AnimationView.swift */; };
+		96A2FBA527F816D70063A81F /* ReadMe_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FBA427F816D70063A81F /* ReadMe_Animation.swift */; };
+		96A2FBA727F833010063A81F /* ExplicitAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FBA627F833010063A81F /* ExplicitAnimationView.swift */; };
 		96D2261027E9D41400D616E1 /* ExampleViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2260F27E9D41400D616E1 /* ExampleViewsApp.swift */; };
 		96D2261227E9D41400D616E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2261127E9D41400D616E1 /* ContentView.swift */; };
 		96D2261427E9D41500D616E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D2261327E9D41500D616E1 /* Assets.xcassets */; };
@@ -68,6 +71,9 @@
 		966D6DB627F1EAF300DA024B /* EnvThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvThirdView.swift; sourceTree = "<group>"; };
 		96A2FB9D27F7F35B0063A81F /* QuadAndCurveShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadAndCurveShape.swift; sourceTree = "<group>"; };
 		96A2FB9F27F808460063A81F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		96A2FBA127F815A60063A81F /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		96A2FBA427F816D70063A81F /* ReadMe_Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe_Animation.swift; sourceTree = "<group>"; };
+		96A2FBA627F833010063A81F /* ExplicitAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitAnimationView.swift; sourceTree = "<group>"; };
 		96D2260C27E9D41400D616E1 /* ExampleViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D2260F27E9D41400D616E1 /* ExampleViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewsApp.swift; sourceTree = "<group>"; };
 		96D2261127E9D41400D616E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 				961CC38527F4734A00541AFD /* ListView.swift */,
 				963D910627F5B5E2007AB68A /* AdvanceListView.swift */,
 				963112ED27F6FB30005293D4 /* Just.swift */,
+				96A2FBA327F815A80063A81F /* Animation */,
 				963112F127F6FEDC005293D4 /* Drawing */,
 				96ED9E7E27F07100005895EC /* @State, Observable, Environment */,
 			);
@@ -160,6 +167,16 @@
 				966D6DB627F1EAF300DA024B /* EnvThirdView.swift */,
 			);
 			path = "ForTest(@Environment)";
+			sourceTree = "<group>";
+		};
+		96A2FBA327F815A80063A81F /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				96A2FBA427F816D70063A81F /* ReadMe_Animation.swift */,
+				96A2FBA127F815A60063A81F /* AnimationView.swift */,
+				96A2FBA627F833010063A81F /* ExplicitAnimationView.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		96D2260327E9D41400D616E1 = {
@@ -307,6 +324,7 @@
 			files = (
 				9667BD6D27F06F8200A568DA /* WifiImageView.swift in Sources */,
 				964F378C27EDC6E500E6E916 /* ReadMe.swift in Sources */,
+				96A2FBA527F816D70063A81F /* ReadMe_Animation.swift in Sources */,
 				96ED9E8027F0712D005895EC /* Readme2.swift in Sources */,
 				963112EE27F6FB30005293D4 /* Just.swift in Sources */,
 				9638EBB627F1B9E100104642 /* RotationView.swift in Sources */,
@@ -316,7 +334,9 @@
 				963112F327F6FEF1005293D4 /* ReadMe_Drawing.swift in Sources */,
 				966D6DB527F1EAEB00DA024B /* EnvSecondView.swift in Sources */,
 				964F378727EDC35000E6E916 /* StandardBody.swift in Sources */,
+				96A2FBA227F815A60063A81F /* AnimationView.swift in Sources */,
 				966D6DB727F1EAF300DA024B /* EnvThirdView.swift in Sources */,
+				96A2FBA727F833010063A81F /* ExplicitAnimationView.swift in Sources */,
 				96F2110027F1D3AB00C02792 /* TimeView.swift in Sources */,
 				96F2110527F1E4CA00C02792 /* ThirdView.swift in Sources */,
 				964F378927EDC54D00E6E916 /* MyVStack.swift in Sources */,

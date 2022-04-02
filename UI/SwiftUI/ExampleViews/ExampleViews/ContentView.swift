@@ -10,23 +10,13 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        TabView {
-            EnvTimeView()
-                .tabItem {
-                    Image(systemName: "star")
-                }
-            
-            EnvSecondView()
-                .tabItem {
-                    Image(systemName: "calendar")
-                }
-        }
+        ExplicitAnimationView()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ExplicitAnimationView()
             .environmentObject(TimerData())
     }
 }
