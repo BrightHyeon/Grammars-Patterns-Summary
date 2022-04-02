@@ -20,3 +20,11 @@ struct ExampleViewsApp: App {
         }
     }
 }
+
+
+/*
+ Xcode 꿀팁.
+ 
+ 복잡한 코드를 구성하다가, 정렬이 꼬일 때는
+ Editor -> Structure -> Re-indent누르면 된다.
+ */
