@@ -35,6 +35,7 @@
 		96A2FBA927F8423A0063A81F /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FBA827F8423A0063A81F /* TransitionView.swift */; };
 		96A2FBAB27F845D40063A81F /* CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FBAA27F845D40063A81F /* CustomTransition.swift */; };
 		96A2FBAD27F848AA0063A81F /* ReadMe_Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FBAC27F848AA0063A81F /* ReadMe_Gesture.swift */; };
+		96A2FBB027F856600063A81F /* GesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2FBAF27F856600063A81F /* GesturesView.swift */; };
 		96D2261027E9D41400D616E1 /* ExampleViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2260F27E9D41400D616E1 /* ExampleViewsApp.swift */; };
 		96D2261227E9D41400D616E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2261127E9D41400D616E1 /* ContentView.swift */; };
 		96D2261427E9D41500D616E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D2261327E9D41500D616E1 /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		96A2FBA827F8423A0063A81F /* TransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
 		96A2FBAA27F845D40063A81F /* CustomTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransition.swift; sourceTree = "<group>"; };
 		96A2FBAC27F848AA0063A81F /* ReadMe_Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe_Gesture.swift; sourceTree = "<group>"; };
+		96A2FBAF27F856600063A81F /* GesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesView.swift; sourceTree = "<group>"; };
 		96D2260C27E9D41400D616E1 /* ExampleViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D2260F27E9D41400D616E1 /* ExampleViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewsApp.swift; sourceTree = "<group>"; };
 		96D2261127E9D41400D616E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				96A2FBAC27F848AA0063A81F /* ReadMe_Gesture.swift */,
+				96A2FBAF27F856600063A81F /* GesturesView.swift */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				9638EBB627F1B9E100104642 /* RotationView.swift in Sources */,
 				964F378427EDC2FA00E6E916 /* TestView.swift in Sources */,
 				96A2FBAB27F845D40063A81F /* CustomTransition.swift in Sources */,
+				96A2FBB027F856600063A81F /* GesturesView.swift in Sources */,
 				961CC38427F463BC00541AFD /* AlignmentGuideView.swift in Sources */,
 				96D2262027E9DBF300D616E1 /* HScrollView.swift in Sources */,
 				963112F327F6FEF1005293D4 /* ReadMe_Drawing.swift in Sources */,
