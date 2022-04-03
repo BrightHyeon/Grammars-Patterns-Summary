@@ -50,6 +50,7 @@
 		96F2110027F1D3AB00C02792 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F210FF27F1D3AB00C02792 /* TimeView.swift */; };
 		96F2110227F1E26E00C02792 /* TimeAndSecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2110127F1E26E00C02792 /* TimeAndSecondTabView.swift */; };
 		96F2110527F1E4CA00C02792 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2110427F1E4CA00C02792 /* ThirdView.swift */; };
+		96FC4A9427F99AD400844EEE /* AdvancedGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC4A9327F99AD400844EEE /* AdvancedGestureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		96F210FF27F1D3AB00C02792 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 		96F2110127F1E26E00C02792 /* TimeAndSecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAndSecondTabView.swift; sourceTree = "<group>"; };
 		96F2110427F1E4CA00C02792 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		96FC4A9327F99AD400844EEE /* AdvancedGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedGestureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			children = (
 				96A2FBAC27F848AA0063A81F /* ReadMe_Gesture.swift */,
 				96A2FBAF27F856600063A81F /* GesturesView.swift */,
+				96FC4A9327F99AD400844EEE /* AdvancedGestureView.swift */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				964F378927EDC54D00E6E916 /* MyVStack.swift in Sources */,
 				963D910727F5B5E2007AB68A /* AdvanceListView.swift in Sources */,
 				964F378227EDC27C00E6E916 /* StandardTitle.swift in Sources */,
+				96FC4A9427F99AD400844EEE /* AdvancedGestureView.swift in Sources */,
 				96F2110227F1E26E00C02792 /* TimeAndSecondTabView.swift in Sources */,
 				963112F027F6FE91005293D4 /* DrawDemoView.swift in Sources */,
 				96F210FE27F1CE6100C02792 /* TimerData.swift in Sources */,

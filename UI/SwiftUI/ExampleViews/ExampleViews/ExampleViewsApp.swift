@@ -27,4 +27,6 @@ struct ExampleViewsApp: App {
  
  복잡한 코드를 구성하다가, 정렬이 꼬일 때는
  Editor -> Structure -> Re-indent누르면 된다.
+ 
+ preview 캔버스에서 핀치 제스처를 하려면 키보드가 Option키를 누른 상태에서 Image뷰를 드래그하면된다.
  */

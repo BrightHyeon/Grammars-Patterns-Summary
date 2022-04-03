@@ -10,13 +10,13 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        GesturesView()
+        AdvancedGestureView()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        GesturesView()
+        AdvancedGestureView()
             .environmentObject(TimerData())
     }
 }
